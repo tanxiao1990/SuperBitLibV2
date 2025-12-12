@@ -1,11 +1,11 @@
 {
     "name": "SuperBitV2",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Extension for YahBoom SuperBitV2",
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "neopixel": "github:lzty634158/pxt-neopixel",
+        "neopixel": "github:tanxiao1990/pxt-neopixel",
         "microphone": "*"
     },
     "files": [
