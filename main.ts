@@ -5,7 +5,7 @@ load dependency
 "SuperBitV2": "file:../pxt-SuperBitV2"
 */
 
-//% color="#ECA40D" weight=30 icon="\uf135"
+//% color="#ECA40D" weight=30 icon="\uf135" block="扩展板superbit"
 namespace SuperBitV2 {
 
     const PCA9685_ADD = 0x40
@@ -853,7 +853,7 @@ namespace SuperBitV2_PWM {
     //% weight=99
     //% blockGap=22
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
-    export function BuzzerPin(value_DNum: mwDigitalNum): void {
+    function BuzzerPin(value_DNum: mwDigitalNum): void {
 		let pinb;
 		if(value_DNum == 1)	{ pinb = AnalogPin.P4; }
 		else if(value_DNum == 2)	{ pinb = AnalogPin.P1; }
@@ -869,7 +869,7 @@ namespace SuperBitV2_PWM {
     //% blockGap=22
     //% speed.min=0 speed.max=1023
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
-    export function VibrationMot(value_DNum: mwDigitalNum, speed: number): void {
+    function VibrationMot(value_DNum: mwDigitalNum, speed: number): void {
 		
 		let pin;
 		if(value_DNum == 1)	{ pin = AnalogPin.P4; }
@@ -887,7 +887,7 @@ namespace SuperBitV2_PWM {
     //% blockGap=20
     //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB(value1: number, value2: number, value3: number): void {
+    function RGB(value1: number, value2: number, value3: number): void {
 		
         pins.analogWritePin(AnalogPin.P13, value1 * 1024 / 256);
         pins.analogWritePin(AnalogPin.P14, value2 * 1024 / 256);
@@ -898,7 +898,7 @@ namespace SuperBitV2_PWM {
     //% weight=1
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB2(value: enColor): void {
+    function RGB2(value: enColor): void {
 		let pin1=DigitalPin.P13;
 		let pin2=DigitalPin.P14;
 		let pin3=DigitalPin.P12;

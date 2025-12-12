@@ -1,5 +1,6 @@
 {
-
+  "SuperBitV2|block": "SuperBit扩展板",
+  "{id:category}SuperBitV2": "SuperBit扩展板",
   "SuperBitV2.RGB_Program|block": "RGB编程灯",
   "SuperBitV2.Music|block": "音乐播放|%index",
   "SuperBitV2.Servo|block": "舵机(180)|编号 %num|角度 %value",
